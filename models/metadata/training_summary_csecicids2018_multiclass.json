@@ -1,0 +1,53 @@
+{
+  "random_forest": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "f1_macro": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "training_duration_s": 1.011,
+    "train_samples": 21000,
+    "val_samples": 4500
+  },
+  "extra_trees": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "f1_macro": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "training_duration_s": 0.886,
+    "train_samples": 21000,
+    "val_samples": 4500
+  },
+  "logistic_regression": {
+    "accuracy": 0.664,
+    "balanced_accuracy": 0.8316,
+    "f1_macro": 0.4065,
+    "precision_macro": 0.5039,
+    "recall_macro": 0.8316,
+    "training_duration_s": 0.317,
+    "train_samples": 21000,
+    "val_samples": 4500
+  },
+  "hist_gradient_boosting": {
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "f1_macro": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "training_duration_s": 1.379,
+    "train_samples": 21000,
+    "val_samples": 4500
+  },
+  "isolation_forest": {
+    "accuracy": 0.0022,
+    "balanced_accuracy": 0.4167,
+    "f1_macro": 0.0022,
+    "precision_macro": 0.0011,
+    "recall_macro": 0.4167,
+    "score_threshold": 0.5824,
+    "training_duration_s": 0.508,
+    "train_samples": 57,
+    "val_samples": 4500
+  }
+}

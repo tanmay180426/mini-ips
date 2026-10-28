@@ -1,0 +1,45 @@
+{
+  "dataset_key": "csecicids2018",
+  "dataset_name": "CSE-CIC-IDS2018",
+  "citation": "Canadian Institute for Cybersecurity & Communications Security Establishment (2018). Collaborative IDS Dataset.",
+  "license": "Open Data (University of New Brunswick / AWS Open Data)",
+  "doc_url": "https://registry.opendata.aws/cse-cic-ids2018/",
+  "retrieval_timestamp": "2026-10-23T17:04:29.034184+00:00",
+  "files": [
+    {
+      "file_key": "wednesday_bruteforce",
+      "filename": "Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv",
+      "local_path": "data\\raw\\csecicids2018\\Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv",
+      "size_bytes": 8841057,
+      "sha256": "9c1974d46740da4b1be16c24ba08e551419a1a5a144fde07834ac860ba9f9d2c",
+      "num_rows": 40000,
+      "num_columns": 80,
+      "sample_columns": [
+        "Dst Port",
+        "Protocol",
+        "Timestamp",
+        "Flow Duration",
+        "Tot Fwd Pkts",
+        "Tot Bwd Pkts",
+        "TotLen Fwd Pkts",
+        "TotLen Bwd Pkts",
+        "Fwd Pkt Len Max",
+        "Fwd Pkt Len Min",
+        "Fwd Pkt Len Mean",
+        "Fwd Pkt Len Std",
+        "Bwd Pkt Len Max",
+        "Bwd Pkt Len Min",
+        "Bwd Pkt Len Mean",
+        "Bwd Pkt Len Std",
+        "Flow Byts/s",
+        "Flow Pkts/s",
+        "Flow IAT Mean",
+        "Flow IAT Std"
+      ],
+      "format": "csv",
+      "status": "VERIFIED",
+      "message": "Download completed successfully"
+    }
+  ],
+  "overall_status": "VERIFIED"
+}

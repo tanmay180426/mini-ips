@@ -1,0 +1,11 @@
+{
+  "dataset_name": "CICIDS2017-Sample-Deterministic",
+  "original_source": "Mini-IDS Reproducible Statistical Generator (RFC 5737 / CICIDS2017 schema)",
+  "retrieval_timestamp": 1792944312.7109745,
+  "file_name": "cicids2017_sample_1200.csv",
+  "file_size_bytes": 524755,
+  "sha256_checksum": "8efbddeb46b96dd18dcdbce23bcc914bb9bbf31fceef487128e9d25652684b0d",
+  "verification_status": "VERIFIED",
+  "doc_reference": "https://www.unb.ca/cic/datasets/ids-2017.html",
+  "processing_status": "RAW"
+}

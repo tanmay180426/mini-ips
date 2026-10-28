@@ -1,0 +1,121 @@
+{
+  "name": "logistic_regression_CICIDS2017",
+  "version": "logistic_regression_multiclass_1792945215",
+  "model_type": "supervised_multiclass",
+  "algorithm": "Logistic Regression",
+  "dataset_name": "cicids2017",
+  "task_type": "multiclass",
+  "feature_schema": [
+    "flow_duration",
+    "total_fwd_packets",
+    "total_backward_packets",
+    "total_length_of_fwd_packets",
+    "total_length_of_bwd_packets",
+    "fwd_packet_length_mean",
+    "fwd_packet_length_std",
+    "fwd_packet_length_min",
+    "fwd_packet_length_max",
+    "bwd_packet_length_mean",
+    "bwd_packet_length_std",
+    "bwd_packet_length_min",
+    "bwd_packet_length_max",
+    "flow_bytes_s",
+    "flow_packets_s",
+    "flow_iat_mean",
+    "flow_iat_std",
+    "flow_iat_max",
+    "fwd_iat_mean",
+    "fwd_iat_std",
+    "bwd_iat_mean",
+    "fin_flag_count",
+    "syn_flag_count",
+    "rst_flag_count",
+    "psh_flag_count",
+    "ack_flag_count",
+    "down_up_ratio",
+    "average_packet_size"
+  ],
+  "metrics": {
+    "model_name": "logistic_regression",
+    "model_version": "logistic_regression_multiclass_1792945215",
+    "dataset_name": "cicids2017",
+    "task_type": "multiclass",
+    "split_method": "stratified",
+    "test_sample_count": 241,
+    "accuracy": 0.991701244813278,
+    "precision_macro": 0.9642857142857143,
+    "recall_macro": 0.996551724137931,
+    "f1_macro": 0.9790331196581197,
+    "precision_weighted": 0.9928867812685239,
+    "recall_weighted": 0.991701244813278,
+    "f1_weighted": 0.9919916125828989,
+    "false_positive_rate": null,
+    "false_negative_rate": null,
+    "roc_auc": 0.9999090247452693,
+    "confusion_matrix": [
+      [
+        143,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        12,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        36,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        48
+      ]
+    ],
+    "class_labels": [
+      "BENIGN",
+      "BruteForce",
+      "DoS/DDoS",
+      "PortScan"
+    ],
+    "per_class_metrics": {
+      "BENIGN": {
+        "precision": 1.0,
+        "recall": 0.9862068965517241,
+        "f1-score": 0.9930555555555556,
+        "support": 145.0
+      },
+      "BruteForce": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1-score": 0.9230769230769231,
+        "support": 12.0
+      },
+      "DoS/DDoS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 36.0
+      },
+      "PortScan": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 48.0
+      }
+    },
+    "inference_latency_ms_per_sample": 0.0020572616181556615,
+    "evaluation_timestamp": 1792945215.2649024
+  },
+  "artifact_dir": "data\\models\\logistic_regression_multiclass_1792945215",
+  "model_path": "data\\models\\logistic_regression_multiclass_1792945215\\model.joblib",
+  "preprocessor_path": "data\\models\\logistic_regression_multiclass_1792945215\\preprocessor.joblib",
+  "created_at": 1792945215.2704074,
+  "is_active": true
+}

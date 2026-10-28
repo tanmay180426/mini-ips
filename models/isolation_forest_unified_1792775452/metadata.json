@@ -1,0 +1,37 @@
+{
+  "name": "Isolation Forest Anomaly Detector (UNIFIED)",
+  "version": "isolation_forest_unified_1792775452",
+  "model_type": "anomaly_isolation_forest",
+  "algorithm": "Isolation Forest",
+  "dataset_name": "unified",
+  "task_type": "anomaly",
+  "feature_schema": [
+    "flow_duration_sec",
+    "fwd_packets",
+    "bwd_packets",
+    "fwd_bytes",
+    "bwd_bytes",
+    "total_packets",
+    "total_bytes",
+    "packet_rate",
+    "byte_rate",
+    "fwd_pkt_len_mean",
+    "bwd_pkt_len_mean"
+  ],
+  "metrics": {
+    "accuracy": 0.2627,
+    "balanced_accuracy": 0.4684,
+    "f1_macro": 0.2294,
+    "precision_macro": 0.3798,
+    "recall_macro": 0.4684,
+    "score_threshold": 0.4892,
+    "training_duration_s": 0.704,
+    "train_samples": 8239,
+    "val_samples": 6750
+  },
+  "artifact_dir": "models\\isolation_forest_unified_1792775452",
+  "model_path": "models\\isolation_forest_unified_1792775452\\model.joblib",
+  "preprocessor_path": "",
+  "created_at": 1792775462.0530121,
+  "is_active": true
+}

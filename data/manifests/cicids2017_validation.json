@@ -1,0 +1,193 @@
+{
+  "dataset_key": "cicids2017",
+  "validation_timestamp": "2026-10-23T17:05:37.808956+00:00",
+  "status": "VALID",
+  "files_validated": [
+    {
+      "dataset_key": "cicids2017",
+      "rows_analyzed": 50000,
+      "columns_count": 79,
+      "numeric_features_count": 78,
+      "categorical_features_count": 1,
+      "total_missing_values": 1,
+      "columns_with_missing": {
+        "Flow Bytes/s": 1
+      },
+      "columns_with_inf": {
+        "Flow Bytes/s": 9,
+        "Flow Packets/s": 10
+      },
+      "constant_columns": [
+        "Bwd PSH Flags",
+        "Fwd URG Flags",
+        "Bwd URG Flags",
+        "CWE Flag Count",
+        "Fwd Avg Bytes/Bulk",
+        "Fwd Avg Packets/Bulk",
+        "Fwd Avg Bulk Rate",
+        "Bwd Avg Bytes/Bulk",
+        "Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate"
+      ],
+      "duplicate_rows": 249,
+      "potential_leakage_columns": [],
+      "label_column": "Label",
+      "label_distribution": {
+        "DDoS": 28503,
+        "BENIGN": 21497
+      },
+      "high_cardinality_categoricals": [],
+      "validation_passed": true,
+      "filename": "Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv.parquet",
+      "size_bytes": 22188516,
+      "sha256": "022ab31ab239f07e11a6458ee771eea0317a001d68398242cb36f5a4be66f972",
+      "total_file_rows": 225745
+    },
+    {
+      "dataset_key": "cicids2017",
+      "rows_analyzed": 50000,
+      "columns_count": 79,
+      "numeric_features_count": 78,
+      "categorical_features_count": 1,
+      "total_missing_values": 2,
+      "columns_with_missing": {
+        "Flow Bytes/s": 2
+      },
+      "columns_with_inf": {
+        "Flow Bytes/s": 68,
+        "Flow Packets/s": 70
+      },
+      "constant_columns": [
+        "Bwd PSH Flags",
+        "Fwd URG Flags",
+        "Bwd URG Flags",
+        "CWE Flag Count",
+        "Fwd Avg Bytes/Bulk",
+        "Fwd Avg Packets/Bulk",
+        "Fwd Avg Bulk Rate",
+        "Bwd Avg Bytes/Bulk",
+        "Bwd Avg Packets/Bulk",
+        "Bwd Avg Bulk Rate"
+      ],
+      "duplicate_rows": 4169,
+      "potential_leakage_columns": [],
+      "label_column": "Label",
+      "label_distribution": {
+        "PortScan": 27694,
+        "BENIGN": 22306
+      },
+      "high_cardinality_categoricals": [],
+      "validation_passed": true,
+      "filename": "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv.parquet",
+      "size_bytes": 15688379,
+      "sha256": "a49a5f5230ef15fbd60079a93db12c5a549913dfed66a142592c27c7264b08d7",
+      "total_file_rows": 286467
+    },
+    {
+      "dataset_key": "cicids2017",
+      "rows_analyzed": 10000,
+      "columns_count": 29,
+      "numeric_features_count": 28,
+      "categorical_features_count": 1,
+      "total_missing_values": 0,
+      "columns_with_missing": {},
+      "columns_with_inf": {},
+      "constant_columns": [],
+      "duplicate_rows": 168,
+      "potential_leakage_columns": [],
+      "label_column": "label",
+      "label_distribution": {
+        "DDoS": 5671,
+        "BENIGN": 4329
+      },
+      "high_cardinality_categoricals": [],
+      "validation_passed": true,
+      "filename": "cicids2017_ddos.csv",
+      "size_bytes": 1945552,
+      "sha256": "3ce6ee7374b603e7f5cabffee290444af9af07180a813f8b0759e3cfb0ab22fd",
+      "total_file_rows": 10000
+    },
+    {
+      "dataset_key": "cicids2017",
+      "rows_analyzed": 15000,
+      "columns_count": 29,
+      "numeric_features_count": 28,
+      "categorical_features_count": 1,
+      "total_missing_values": 0,
+      "columns_with_missing": {},
+      "columns_with_inf": {},
+      "constant_columns": [
+        "rst_flag_count"
+      ],
+      "duplicate_rows": 5027,
+      "potential_leakage_columns": [],
+      "label_column": "label",
+      "label_distribution": {
+        "DDoS": 5000,
+        "PortScan": 5000,
+        "BENIGN": 5000
+      },
+      "high_cardinality_categoricals": [],
+      "validation_passed": true,
+      "filename": "cicids2017_multiclass.csv",
+      "size_bytes": 2626204,
+      "sha256": "630982a5cc3a7a55f8e0fe5e6ad6af873004a153172f235648954a59363963d1",
+      "total_file_rows": 15000
+    },
+    {
+      "dataset_key": "cicids2017",
+      "rows_analyzed": 10000,
+      "columns_count": 29,
+      "numeric_features_count": 28,
+      "categorical_features_count": 1,
+      "total_missing_values": 0,
+      "columns_with_missing": {},
+      "columns_with_inf": {},
+      "constant_columns": [],
+      "duplicate_rows": 5605,
+      "potential_leakage_columns": [],
+      "label_column": "label",
+      "label_distribution": {
+        "PortScan": 5548,
+        "BENIGN": 4452
+      },
+      "high_cardinality_categoricals": [],
+      "validation_passed": true,
+      "filename": "cicids2017_portscan.csv",
+      "size_bytes": 1576620,
+      "sha256": "8c0e162a96929dd563ad50f38bfdc4f127cf7432d5f1d91e85a00283990e2809",
+      "total_file_rows": 10000
+    },
+    {
+      "dataset_key": "cicids2017",
+      "rows_analyzed": 1200,
+      "columns_count": 32,
+      "numeric_features_count": 31,
+      "categorical_features_count": 1,
+      "total_missing_values": 0,
+      "columns_with_missing": {},
+      "columns_with_inf": {},
+      "constant_columns": [
+        "Flow IAT Min",
+        "Bwd IAT Std"
+      ],
+      "duplicate_rows": 0,
+      "potential_leakage_columns": [
+        "Timestamp"
+      ],
+      "label_column": "Label",
+      "label_distribution": {
+        "BENIGN": 720,
+        "PortScan": 240,
+        "DoS": 180,
+        "BruteForce": 60
+      },
+      "high_cardinality_categoricals": [],
+      "validation_passed": true,
+      "filename": "cicids2017_sample_1200.csv",
+      "size_bytes": 524755,
+      "sha256": "8efbddeb46b96dd18dcdbce23bcc914bb9bbf31fceef487128e9d25652684b0d",
+      "total_file_rows": 1200
+    }
+  ]
+}

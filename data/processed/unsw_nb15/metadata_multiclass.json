@@ -1,0 +1,67 @@
+{
+  "dataset_key": "unsw_nb15",
+  "task_type": "multiclass",
+  "experiment": "Experiment A (Dataset-Specific)",
+  "num_features": 39,
+  "feature_names": [
+    "dur",
+    "spkts",
+    "dpkts",
+    "sbytes",
+    "dbytes",
+    "rate",
+    "sttl",
+    "dttl",
+    "sload",
+    "dload",
+    "sloss",
+    "dloss",
+    "sinpkt",
+    "dinpkt",
+    "sjit",
+    "djit",
+    "swin",
+    "stcpb",
+    "dtcpb",
+    "dwin",
+    "tcprtt",
+    "synack",
+    "ackdat",
+    "smean",
+    "dmean",
+    "trans_depth",
+    "response_body_len",
+    "ct_srv_src",
+    "ct_state_ttl",
+    "ct_dst_ltm",
+    "ct_src_dport_ltm",
+    "ct_dst_sport_ltm",
+    "ct_dst_src_ltm",
+    "is_ftp_login",
+    "ct_ftp_cmd",
+    "ct_flw_http_mthd",
+    "ct_src_ltm",
+    "ct_srv_dst",
+    "is_sm_ips_ports"
+  ],
+  "label_mapping": {
+    "BENIGN": 0,
+    "OTHER_ATTACK": 6
+  },
+  "inverse_label_mapping": {
+    "0": "BENIGN",
+    "6": "OTHER_ATTACK"
+  },
+  "train_samples": 21000,
+  "val_samples": 4500,
+  "test_samples": 4500,
+  "class_distribution_train": {
+    "0": 9527,
+    "6": 11473
+  },
+  "class_distribution_test": {
+    "0": 2042,
+    "6": 2458
+  },
+  "timestamp": "2026-10-23T17:08:34.975864+00:00"
+}

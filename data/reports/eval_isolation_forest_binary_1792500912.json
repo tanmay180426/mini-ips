@@ -1,0 +1,62 @@
+{
+  "model_name": "IsolationForest_CICIDS2017",
+  "model_version": "isolation_forest_binary_1792500912",
+  "dataset_name": "cicids2017",
+  "task_type": "anomaly",
+  "split_method": "stratified",
+  "test_sample_count": 241,
+  "accuracy": 0.05394190871369295,
+  "precision_macro": 0.030952380952380953,
+  "recall_macro": 0.04513888888888889,
+  "f1_macro": 0.03672316384180791,
+  "precision_weighted": 0.03698873740367516,
+  "recall_weighted": 0.05394190871369295,
+  "f1_weighted": 0.04388494268232646,
+  "false_positive_rate": null,
+  "false_negative_rate": null,
+  "roc_auc": null,
+  "confusion_matrix": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      18,
+      0,
+      127
+    ],
+    [
+      83,
+      0,
+      13
+    ]
+  ],
+  "class_labels": [
+    "Class_-1",
+    "Class_0",
+    "Class_1"
+  ],
+  "per_class_metrics": {
+    "Class_-1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "Class_0": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 145.0
+    },
+    "Class_1": {
+      "precision": 0.09285714285714286,
+      "recall": 0.13541666666666666,
+      "f1-score": 0.11016949152542373,
+      "support": 96.0
+    }
+  },
+  "inference_latency_ms_per_sample": 0.020532365146269868,
+  "evaluation_timestamp": 1792500926.998747
+}

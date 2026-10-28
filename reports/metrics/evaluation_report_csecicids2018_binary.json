@@ -1,0 +1,276 @@
+{
+  "dataset_key": "csecicids2018",
+  "task_type": "binary",
+  "timestamp": "2026-10-23T17:12:06.486263+00:00",
+  "test_samples": 4500,
+  "class_distribution": {
+    "BENIGN": 12,
+    "ATTACK": 4488
+  },
+  "models": {
+    "extra_trees_csecicids2018_binary_1792775440": {
+      "model_name": "extra_trees_csecicids2018_binary_1792775440",
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "precision_macro": 1.0,
+      "precision_weighted": 1.0,
+      "recall_macro": 1.0,
+      "recall_weighted": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "inference_latency_ms_per_1k": 24.09,
+      "per_class": {
+        "BENIGN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 12
+        },
+        "ATTACK": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4488
+        }
+      },
+      "confusion_matrix": [
+        [
+          12,
+          0
+        ],
+        [
+          0,
+          4488
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "ATTACK"
+      ],
+      "artifact_path": "models\\extra_trees_csecicids2018_binary_1792775440\\model.joblib",
+      "artifact_size_kb": 299.8
+    },
+    "hist_gradient_boosting_csecicids2018_binary_1792775440": {
+      "model_name": "hist_gradient_boosting_csecicids2018_binary_1792775440",
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "precision_macro": 1.0,
+      "precision_weighted": 1.0,
+      "recall_macro": 1.0,
+      "recall_weighted": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "inference_latency_ms_per_1k": 7.26,
+      "per_class": {
+        "BENIGN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 12
+        },
+        "ATTACK": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4488
+        }
+      },
+      "confusion_matrix": [
+        [
+          12,
+          0
+        ],
+        [
+          0,
+          4488
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "ATTACK"
+      ],
+      "artifact_path": "models\\hist_gradient_boosting_csecicids2018_binary_1792775440\\model.joblib",
+      "artifact_size_kb": 55.8
+    },
+    "logistic_regression_csecicids2018_binary_1792775440": {
+      "model_name": "logistic_regression_csecicids2018_binary_1792775440",
+      "accuracy": 0.6744,
+      "balanced_accuracy": 0.8368,
+      "f1_macro": 0.4105,
+      "f1_weighted": 0.8028,
+      "precision_macro": 0.5041,
+      "precision_weighted": 0.9974,
+      "recall_macro": 0.8368,
+      "recall_weighted": 0.6744,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.3264,
+      "inference_latency_ms_per_1k": 0.24,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.0081,
+          "recall": 1.0,
+          "f1": 0.0161,
+          "support": 12
+        },
+        "ATTACK": {
+          "precision": 1.0,
+          "recall": 0.6736,
+          "f1": 0.805,
+          "support": 4488
+        }
+      },
+      "confusion_matrix": [
+        [
+          12,
+          0
+        ],
+        [
+          1465,
+          3023
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "ATTACK"
+      ],
+      "artifact_path": "models\\logistic_regression_csecicids2018_binary_1792775440\\model.joblib",
+      "artifact_size_kb": 1.1
+    },
+    "random_forest_csecicids2018_binary_1792775440": {
+      "model_name": "random_forest_csecicids2018_binary_1792775440",
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "precision_macro": 1.0,
+      "precision_weighted": 1.0,
+      "recall_macro": 1.0,
+      "recall_weighted": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "inference_latency_ms_per_1k": 21.73,
+      "per_class": {
+        "BENIGN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 12
+        },
+        "ATTACK": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 4488
+        }
+      },
+      "confusion_matrix": [
+        [
+          12,
+          0
+        ],
+        [
+          0,
+          4488
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "ATTACK"
+      ],
+      "artifact_path": "models\\random_forest_csecicids2018_binary_1792775440\\model.joblib",
+      "artifact_size_kb": 236.7
+    },
+    "isolation_forest_csecicids2018_1792775440": {
+      "model_name": "isolation_forest_csecicids2018_1792775440",
+      "accuracy": 0.0022,
+      "balanced_accuracy": 0.4167,
+      "f1_macro": 0.0022,
+      "f1_weighted": 0.0,
+      "precision_macro": 0.0011,
+      "precision_weighted": 0.0,
+      "recall_macro": 0.4167,
+      "recall_weighted": 0.0022,
+      "false_positive_rate": 0.1667,
+      "false_negative_rate": 1.0,
+      "inference_latency_ms_per_1k": 14.87,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.0022,
+          "recall": 0.8333,
+          "f1": 0.0044,
+          "support": 12
+        },
+        "ATTACK": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4488
+        }
+      },
+      "confusion_matrix": [
+        [
+          10,
+          2
+        ],
+        [
+          4488,
+          0
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "ATTACK"
+      ],
+      "artifact_path": "models\\isolation_forest_csecicids2018_1792775440\\model.joblib",
+      "artifact_size_kb": 389.3
+    },
+    "isolation_forest_csecicids2018_1792775446": {
+      "model_name": "isolation_forest_csecicids2018_1792775446",
+      "accuracy": 0.0022,
+      "balanced_accuracy": 0.4167,
+      "f1_macro": 0.0022,
+      "f1_weighted": 0.0,
+      "precision_macro": 0.0011,
+      "precision_weighted": 0.0,
+      "recall_macro": 0.4167,
+      "recall_weighted": 0.0022,
+      "false_positive_rate": 0.1667,
+      "false_negative_rate": 1.0,
+      "inference_latency_ms_per_1k": 14.64,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.0022,
+          "recall": 0.8333,
+          "f1": 0.0044,
+          "support": 12
+        },
+        "ATTACK": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4488
+        }
+      },
+      "confusion_matrix": [
+        [
+          10,
+          2
+        ],
+        [
+          4488,
+          0
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "ATTACK"
+      ],
+      "artifact_path": "models\\isolation_forest_csecicids2018_1792775446\\model.joblib",
+      "artifact_size_kb": 389.3
+    }
+  }
+}

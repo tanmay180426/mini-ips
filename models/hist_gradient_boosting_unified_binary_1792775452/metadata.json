@@ -1,0 +1,36 @@
+{
+  "name": "HistGradientBoosting (UNIFIED)",
+  "version": "hist_gradient_boosting_unified_binary_1792775452",
+  "model_type": "supervised_binary",
+  "algorithm": "HistGradientBoosting",
+  "dataset_name": "unified",
+  "task_type": "binary",
+  "feature_schema": [
+    "flow_duration_sec",
+    "fwd_packets",
+    "bwd_packets",
+    "fwd_bytes",
+    "bwd_bytes",
+    "total_packets",
+    "total_bytes",
+    "packet_rate",
+    "byte_rate",
+    "fwd_pkt_len_mean",
+    "bwd_pkt_len_mean"
+  ],
+  "metrics": {
+    "accuracy": 0.9723,
+    "balanced_accuracy": 0.969,
+    "f1_macro": 0.9645,
+    "precision_macro": 0.9602,
+    "recall_macro": 0.969,
+    "training_duration_s": 3.016,
+    "train_samples": 31500,
+    "val_samples": 6750
+  },
+  "artifact_dir": "models\\hist_gradient_boosting_unified_binary_1792775452",
+  "model_path": "models\\hist_gradient_boosting_unified_binary_1792775452\\model.joblib",
+  "preprocessor_path": "",
+  "created_at": 1792775460.9377224,
+  "is_active": false
+}

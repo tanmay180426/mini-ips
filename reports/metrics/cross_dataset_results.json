@@ -1,0 +1,221 @@
+{
+  "title": "Mini-IDS Cross-Dataset Transferability & Generalization Benchmark",
+  "timestamp": "2026-10-23T17:13:50.351662+00:00",
+  "common_features": [
+    "flow_duration_sec",
+    "fwd_packets",
+    "bwd_packets",
+    "fwd_bytes",
+    "bwd_bytes",
+    "total_packets",
+    "total_bytes",
+    "packet_rate",
+    "byte_rate",
+    "fwd_pkt_len_mean",
+    "bwd_pkt_len_mean"
+  ],
+  "experiments": [
+    {
+      "experiment_id": "EXP-1",
+      "name": "In-Dataset Baseline: CICIDS2017",
+      "train_sources": [
+        "cicids2017"
+      ],
+      "test_source": "cicids2017",
+      "train_samples": 10500,
+      "test_samples": 4500,
+      "model": "Random Forest",
+      "metrics": {
+        "accuracy": 0.9973,
+        "balanced_accuracy": 0.9973,
+        "f1_macro": 0.997,
+        "precision_macro": 0.9967,
+        "recall_macro": 0.9973,
+        "false_positive_rate": 0.0027,
+        "fit_duration_s": 0.7,
+        "latency_ms_per_1k": 23.63
+      },
+      "transfer_gap": 0.0
+    },
+    {
+      "experiment_id": "EXP-1",
+      "name": "In-Dataset Baseline: UNSW_NB15",
+      "train_sources": [
+        "unsw_nb15"
+      ],
+      "test_source": "unsw_nb15",
+      "train_samples": 10500,
+      "test_samples": 4500,
+      "model": "Random Forest",
+      "metrics": {
+        "accuracy": 0.9149,
+        "balanced_accuracy": 0.9191,
+        "f1_macro": 0.9147,
+        "precision_macro": 0.9148,
+        "recall_macro": 0.9191,
+        "false_positive_rate": 0.0391,
+        "fit_duration_s": 0.88,
+        "latency_ms_per_1k": 23.99
+      },
+      "transfer_gap": 0.0
+    },
+    {
+      "experiment_id": "EXP-1",
+      "name": "In-Dataset Baseline: CSECICIDS2018",
+      "train_sources": [
+        "csecicids2018"
+      ],
+      "test_source": "csecicids2018",
+      "train_samples": 10500,
+      "test_samples": 4500,
+      "model": "Random Forest",
+      "metrics": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "f1_macro": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0,
+        "false_positive_rate": 0.0,
+        "fit_duration_s": 0.62,
+        "latency_ms_per_1k": 17.53
+      },
+      "transfer_gap": 0.0
+    },
+    {
+      "experiment_id": "EXP-2",
+      "name": "Cross-Dataset Transfer: CIC-IDS2017 -> UNSW-NB15",
+      "train_sources": [
+        "cicids2017"
+      ],
+      "test_source": "unsw_nb15",
+      "train_samples": 15000,
+      "test_samples": 15000,
+      "model": "Random Forest",
+      "metrics": {
+        "accuracy": 0.4491,
+        "balanced_accuracy": 0.5,
+        "f1_macro": 0.3099,
+        "precision_macro": 0.2246,
+        "recall_macro": 0.5,
+        "false_positive_rate": 0.0,
+        "fit_duration_s": 0.8,
+        "latency_ms_per_1k": 9.38
+      },
+      "transfer_gap": 0.6048
+    },
+    {
+      "experiment_id": "EXP-3",
+      "name": "Cross-Dataset Transfer: CIC-IDS2017 -> CSE-CIC-IDS2018",
+      "train_sources": [
+        "cicids2017"
+      ],
+      "test_source": "csecicids2018",
+      "train_samples": 15000,
+      "test_samples": 15000,
+      "model": "Random Forest",
+      "metrics": {
+        "accuracy": 0.0021,
+        "balanced_accuracy": 0.5,
+        "f1_macro": 0.0021,
+        "precision_macro": 0.0011,
+        "recall_macro": 0.5,
+        "false_positive_rate": 0.0,
+        "fit_duration_s": 0.87,
+        "latency_ms_per_1k": 7.84
+      },
+      "transfer_gap": 0.9979
+    },
+    {
+      "experiment_id": "EXP-4",
+      "name": "Multi-Source Training: (CIC17 + CIC18) -> UNSW-NB15",
+      "train_sources": [
+        "cicids2017",
+        "csecicids2018"
+      ],
+      "test_source": "unsw_nb15",
+      "train_samples": 30000,
+      "test_samples": 15000,
+      "model": "Random Forest",
+      "metrics": {
+        "accuracy": 0.4491,
+        "balanced_accuracy": 0.5,
+        "f1_macro": 0.3099,
+        "precision_macro": 0.2246,
+        "recall_macro": 0.5,
+        "false_positive_rate": 0.0,
+        "fit_duration_s": 1.23,
+        "latency_ms_per_1k": 9.79
+      },
+      "transfer_gap": 0.6048
+    },
+    {
+      "experiment_id": "EXP-5",
+      "name": "LODO: Train (unsw_nb15 + csecicids2018) -> Test on CICIDS2017",
+      "train_sources": [
+        "unsw_nb15",
+        "csecicids2018"
+      ],
+      "test_source": "cicids2017",
+      "train_samples": 30000,
+      "test_samples": 15000,
+      "model": "Random Forest",
+      "metrics": {
+        "accuracy": 0.6624,
+        "balanced_accuracy": 0.5871,
+        "f1_macro": 0.5894,
+        "precision_macro": 0.6046,
+        "recall_macro": 0.5871,
+        "false_positive_rate": 0.6388,
+        "fit_duration_s": 1.63,
+        "latency_ms_per_1k": 8.95
+      },
+      "transfer_gap": 0.4076
+    },
+    {
+      "experiment_id": "EXP-5",
+      "name": "LODO: Train (cicids2017 + csecicids2018) -> Test on UNSW_NB15",
+      "train_sources": [
+        "cicids2017",
+        "csecicids2018"
+      ],
+      "test_source": "unsw_nb15",
+      "train_samples": 30000,
+      "test_samples": 15000,
+      "model": "Random Forest",
+      "metrics": {
+        "accuracy": 0.4491,
+        "balanced_accuracy": 0.5,
+        "f1_macro": 0.3099,
+        "precision_macro": 0.2246,
+        "recall_macro": 0.5,
+        "false_positive_rate": 0.0,
+        "fit_duration_s": 1.15,
+        "latency_ms_per_1k": 8.1
+      },
+      "transfer_gap": 0.6048
+    },
+    {
+      "experiment_id": "EXP-5",
+      "name": "LODO: Train (cicids2017 + unsw_nb15) -> Test on CSECICIDS2018",
+      "train_sources": [
+        "cicids2017",
+        "unsw_nb15"
+      ],
+      "test_source": "csecicids2018",
+      "train_samples": 30000,
+      "test_samples": 15000,
+      "model": "Random Forest",
+      "metrics": {
+        "accuracy": 0.0019,
+        "balanced_accuracy": 0.4531,
+        "f1_macro": 0.0019,
+        "precision_macro": 0.001,
+        "recall_macro": 0.4531,
+        "false_positive_rate": 0.0938,
+        "fit_duration_s": 2.16,
+        "latency_ms_per_1k": 8.16
+      },
+      "transfer_gap": 0.9981
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Random Forest (UNIFIED)",
+  "version": "random_forest_unified_multiclass_1792775462",
+  "model_type": "supervised_multiclass",
+  "algorithm": "Random Forest",
+  "dataset_name": "unified",
+  "task_type": "multiclass",
+  "feature_schema": [
+    "flow_duration_sec",
+    "fwd_packets",
+    "bwd_packets",
+    "fwd_bytes",
+    "bwd_bytes",
+    "total_packets",
+    "total_bytes",
+    "packet_rate",
+    "byte_rate",
+    "fwd_pkt_len_mean",
+    "bwd_pkt_len_mean"
+  ],
+  "metrics": {
+    "accuracy": 0.9723,
+    "balanced_accuracy": 0.975,
+    "f1_macro": 0.974,
+    "precision_macro": 0.9732,
+    "recall_macro": 0.975,
+    "training_duration_s": 2.306,
+    "train_samples": 31500,
+    "val_samples": 6750
+  },
+  "artifact_dir": "models\\random_forest_unified_multiclass_1792775462",
+  "model_path": "models\\random_forest_unified_multiclass_1792775462\\model.joblib",
+  "preprocessor_path": "",
+  "created_at": 1792775464.9732635,
+  "is_active": true
+}

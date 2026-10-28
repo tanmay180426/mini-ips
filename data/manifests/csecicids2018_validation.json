@@ -1,0 +1,56 @@
+{
+  "dataset_key": "csecicids2018",
+  "validation_timestamp": "2026-10-23T17:05:38.269355+00:00",
+  "status": "VALID",
+  "files_validated": [
+    {
+      "dataset_key": "csecicids2018",
+      "rows_analyzed": 40000,
+      "columns_count": 80,
+      "numeric_features_count": 78,
+      "categorical_features_count": 2,
+      "total_missing_values": 1,
+      "columns_with_missing": {
+        "Flow Byts/s": 1
+      },
+      "columns_with_inf": {
+        "Flow Pkts/s": 1
+      },
+      "constant_columns": [
+        "Bwd PSH Flags",
+        "Fwd URG Flags",
+        "Bwd URG Flags",
+        "FIN Flag Cnt",
+        "RST Flag Cnt",
+        "URG Flag Cnt",
+        "CWE Flag Count",
+        "ECE Flag Cnt",
+        "Fwd Byts/b Avg",
+        "Fwd Pkts/b Avg",
+        "Fwd Blk Rate Avg",
+        "Bwd Byts/b Avg",
+        "Bwd Pkts/b Avg",
+        "Bwd Blk Rate Avg",
+        "Active Std"
+      ],
+      "duplicate_rows": 39849,
+      "potential_leakage_columns": [
+        "Dst Port",
+        "Timestamp"
+      ],
+      "label_column": "Label",
+      "label_distribution": {
+        "FTP-BruteForce": 39897,
+        "Benign": 103
+      },
+      "high_cardinality_categoricals": [
+        "Timestamp"
+      ],
+      "validation_passed": true,
+      "filename": "Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv",
+      "size_bytes": 8841057,
+      "sha256": "9c1974d46740da4b1be16c24ba08e551419a1a5a144fde07834ac860ba9f9d2c",
+      "total_file_rows": 40000
+    }
+  ]
+}

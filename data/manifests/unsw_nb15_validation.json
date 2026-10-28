@@ -1,0 +1,35 @@
+{
+  "dataset_key": "unsw_nb15",
+  "validation_timestamp": "2026-10-23T17:05:38.043226+00:00",
+  "status": "VALID",
+  "files_validated": [
+    {
+      "dataset_key": "unsw_nb15",
+      "rows_analyzed": 50000,
+      "columns_count": 45,
+      "numeric_features_count": 41,
+      "categorical_features_count": 4,
+      "total_missing_values": 0,
+      "columns_with_missing": {},
+      "columns_with_inf": {},
+      "constant_columns": [],
+      "duplicate_rows": 16260,
+      "potential_leakage_columns": [
+        "id"
+      ],
+      "label_column": "label",
+      "label_distribution": {
+        "1": 29480,
+        "0": 20520
+      },
+      "high_cardinality_categoricals": [
+        "proto"
+      ],
+      "validation_passed": true,
+      "filename": "UNSW_NB15_testing-set.csv",
+      "size_bytes": 15380800,
+      "sha256": "734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559",
+      "total_file_rows": 82332
+    }
+  ]
+}

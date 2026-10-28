@@ -1,0 +1,36 @@
+{
+  "name": "Extra Trees (UNIFIED)",
+  "version": "extra_trees_unified_multiclass_1792775462",
+  "model_type": "supervised_multiclass",
+  "algorithm": "Extra Trees",
+  "dataset_name": "unified",
+  "task_type": "multiclass",
+  "feature_schema": [
+    "flow_duration_sec",
+    "fwd_packets",
+    "bwd_packets",
+    "fwd_bytes",
+    "bwd_bytes",
+    "total_packets",
+    "total_bytes",
+    "packet_rate",
+    "byte_rate",
+    "fwd_pkt_len_mean",
+    "bwd_pkt_len_mean"
+  ],
+  "metrics": {
+    "accuracy": 0.9559,
+    "balanced_accuracy": 0.9604,
+    "f1_macro": 0.9556,
+    "precision_macro": 0.9512,
+    "recall_macro": 0.9604,
+    "training_duration_s": 1.479,
+    "train_samples": 31500,
+    "val_samples": 6750
+  },
+  "artifact_dir": "models\\extra_trees_unified_multiclass_1792775462",
+  "model_path": "models\\extra_trees_unified_multiclass_1792775462\\model.joblib",
+  "preprocessor_path": "",
+  "created_at": 1792775466.9336956,
+  "is_active": false
+}

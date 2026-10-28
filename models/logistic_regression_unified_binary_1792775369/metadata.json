@@ -1,0 +1,36 @@
+{
+  "name": "Logistic Regression (UNIFIED)",
+  "version": "logistic_regression_unified_binary_1792775369",
+  "model_type": "supervised_binary",
+  "algorithm": "Logistic Regression",
+  "dataset_name": "unified",
+  "task_type": "binary",
+  "feature_schema": [
+    "flow_duration_sec",
+    "fwd_packets",
+    "bwd_packets",
+    "fwd_bytes",
+    "bwd_bytes",
+    "total_packets",
+    "total_bytes",
+    "packet_rate",
+    "byte_rate",
+    "fwd_pkt_len_mean",
+    "bwd_pkt_len_mean"
+  ],
+  "metrics": {
+    "accuracy": 0.7204,
+    "balanced_accuracy": 0.7895,
+    "f1_macro": 0.7046,
+    "precision_macro": 0.7237,
+    "recall_macro": 0.7895,
+    "training_duration_s": 0.116,
+    "train_samples": 31500,
+    "val_samples": 6750
+  },
+  "artifact_dir": "models\\logistic_regression_unified_binary_1792775369",
+  "model_path": "models\\logistic_regression_unified_binary_1792775369\\model.joblib",
+  "preprocessor_path": "",
+  "created_at": 1792775370.2357235,
+  "is_active": false
+}

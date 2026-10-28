@@ -1,0 +1,146 @@
+{
+  "task_type": "multiclass",
+  "test_samples": 2250,
+  "class_distribution": {
+    "BENIGN": 750,
+    "DDoS": 750,
+    "PortScan": 750
+  },
+  "models": {
+    "isolation_forest_anomaly_1792645935": {
+      "algorithm": "IsolationForest",
+      "model_type": "anomaly_isolation_forest",
+      "attack_detection_rate": 0.0793,
+      "false_alarm_rate": 0.052,
+      "overall_accuracy": 0.3689,
+      "confusion_matrix": [
+        [
+          711,
+          39
+        ],
+        [
+          1381,
+          119
+        ]
+      ]
+    },
+    "logistic_regression_multiclass_1792645935": {
+      "algorithm": "LogisticRegression",
+      "model_type": "supervised_multiclass",
+      "accuracy": 0.996,
+      "macro_f1": 0.996,
+      "weighted_f1": 0.996,
+      "macro_precision": 0.996,
+      "macro_recall": 0.996,
+      "confusion_matrix": [
+        [
+          746,
+          4,
+          0
+        ],
+        [
+          0,
+          750,
+          0
+        ],
+        [
+          3,
+          2,
+          745
+        ]
+      ],
+      "classification_report": {
+        "BENIGN": {
+          "precision": 0.9959946595460614,
+          "recall": 0.9946666666666667,
+          "f1-score": 0.9953302201467645,
+          "support": 750.0
+        },
+        "DDoS": {
+          "precision": 0.9920634920634921,
+          "recall": 1.0,
+          "f1-score": 0.9960159362549801,
+          "support": 750.0
+        },
+        "PortScan": {
+          "precision": 1.0,
+          "recall": 0.9933333333333333,
+          "f1-score": 0.9966555183946488,
+          "support": 750.0
+        },
+        "accuracy": 0.996,
+        "macro avg": {
+          "precision": 0.9960193838698511,
+          "recall": 0.996,
+          "f1-score": 0.9960005582654645,
+          "support": 2250.0
+        },
+        "weighted avg": {
+          "precision": 0.9960193838698512,
+          "recall": 0.996,
+          "f1-score": 0.9960005582654644,
+          "support": 2250.0
+        }
+      }
+    },
+    "random_forest_multiclass_1792645935": {
+      "algorithm": "RandomForestClassifier",
+      "model_type": "supervised_multiclass",
+      "accuracy": 0.9987,
+      "macro_f1": 0.9987,
+      "weighted_f1": 0.9987,
+      "macro_precision": 0.9987,
+      "macro_recall": 0.9987,
+      "confusion_matrix": [
+        [
+          750,
+          0,
+          0
+        ],
+        [
+          0,
+          750,
+          0
+        ],
+        [
+          2,
+          1,
+          747
+        ]
+      ],
+      "classification_report": {
+        "BENIGN": {
+          "precision": 0.9973404255319149,
+          "recall": 1.0,
+          "f1-score": 0.9986684420772304,
+          "support": 750.0
+        },
+        "DDoS": {
+          "precision": 0.9986684420772304,
+          "recall": 1.0,
+          "f1-score": 0.9993337774816788,
+          "support": 750.0
+        },
+        "PortScan": {
+          "precision": 1.0,
+          "recall": 0.996,
+          "f1-score": 0.9979959919839679,
+          "support": 750.0
+        },
+        "accuracy": 0.9986666666666667,
+        "macro avg": {
+          "precision": 0.9986696225363817,
+          "recall": 0.9986666666666667,
+          "f1-score": 0.9986660705142923,
+          "support": 2250.0
+        },
+        "weighted avg": {
+          "precision": 0.9986696225363818,
+          "recall": 0.9986666666666667,
+          "f1-score": 0.9986660705142925,
+          "support": 2250.0
+        }
+      }
+    }
+  }
+}

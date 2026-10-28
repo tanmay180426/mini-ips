@@ -1,0 +1,84 @@
+# ==============================================================================
+# Mini-IDS .gitignore
+# Excludes sensitive data, databases, packet captures, virtualenvs, and artefacts
+# ==============================================================================
+
+# Python bytecode, compilation, and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# SQLite databases, write-ahead logs, and journal files
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.db.*
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite.*
+
+# Packet capture files (real or synthetic PCAPs)
+*.pcap
+*.pcapng
+*.cap
+!data/.gitkeep
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating system metadata
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Logs and runtime exports
+*.log
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# Temporary scratch and debug artifacts
+scratch/
+.system_generated/
+.agents/
+
+# Machine Learning Models and Large Datasets
+*.joblib
+*.pkl
+*.parquet
+*.npy
+data/raw/
+data/datasets/*/raw/*
+data/datasets/*/processed/*
+!data/datasets/**/metadata/
+!data/datasets/**/metadata/*
+!models/**/*.json
+!models/*.json
+

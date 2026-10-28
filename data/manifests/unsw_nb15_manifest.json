@@ -1,0 +1,45 @@
+{
+  "dataset_key": "unsw_nb15",
+  "dataset_name": "UNSW-NB15",
+  "citation": "Moustafa, N., & Slay, J. (2015). UNSW-NB15: A comprehensive data set for network intrusion detection systems. MilCIS.",
+  "license": "Academic and Research Use (UNSW Canberra Cyber)",
+  "doc_url": "https://research.unsw.edu.au/projects/unsw-nb15-dataset",
+  "retrieval_timestamp": "2026-10-23T17:04:25.678526+00:00",
+  "files": [
+    {
+      "file_key": "test_set",
+      "filename": "UNSW_NB15_testing-set.csv",
+      "local_path": "data\\raw\\unsw_nb15\\UNSW_NB15_testing-set.csv",
+      "size_bytes": 15380800,
+      "sha256": "734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559",
+      "num_rows": 82332,
+      "num_columns": 45,
+      "sample_columns": [
+        "id",
+        "dur",
+        "proto",
+        "service",
+        "state",
+        "spkts",
+        "dpkts",
+        "sbytes",
+        "dbytes",
+        "rate",
+        "sttl",
+        "dttl",
+        "sload",
+        "dload",
+        "sloss",
+        "dloss",
+        "sinpkt",
+        "dinpkt",
+        "sjit",
+        "djit"
+      ],
+      "format": "csv",
+      "status": "VERIFIED",
+      "message": "Download completed successfully"
+    }
+  ],
+  "overall_status": "VERIFIED"
+}

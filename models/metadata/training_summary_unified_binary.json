@@ -1,0 +1,53 @@
+{
+  "random_forest": {
+    "accuracy": 0.9681,
+    "balanced_accuracy": 0.9757,
+    "f1_macro": 0.9601,
+    "precision_macro": 0.9472,
+    "recall_macro": 0.9757,
+    "training_duration_s": 2.501,
+    "train_samples": 31500,
+    "val_samples": 6750
+  },
+  "extra_trees": {
+    "accuracy": 0.9359,
+    "balanced_accuracy": 0.95,
+    "f1_macro": 0.9218,
+    "precision_macro": 0.9027,
+    "recall_macro": 0.95,
+    "training_duration_s": 1.41,
+    "train_samples": 31500,
+    "val_samples": 6750
+  },
+  "logistic_regression": {
+    "accuracy": 0.7204,
+    "balanced_accuracy": 0.7895,
+    "f1_macro": 0.7046,
+    "precision_macro": 0.7237,
+    "recall_macro": 0.7895,
+    "training_duration_s": 0.689,
+    "train_samples": 31500,
+    "val_samples": 6750
+  },
+  "hist_gradient_boosting": {
+    "accuracy": 0.9723,
+    "balanced_accuracy": 0.969,
+    "f1_macro": 0.9645,
+    "precision_macro": 0.9602,
+    "recall_macro": 0.969,
+    "training_duration_s": 3.016,
+    "train_samples": 31500,
+    "val_samples": 6750
+  },
+  "isolation_forest": {
+    "accuracy": 0.2627,
+    "balanced_accuracy": 0.4684,
+    "f1_macro": 0.2294,
+    "precision_macro": 0.3798,
+    "recall_macro": 0.4684,
+    "score_threshold": 0.4892,
+    "training_duration_s": 0.704,
+    "train_samples": 8239,
+    "val_samples": 6750
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "dataset_key": "unified",
+  "task_type": "multiclass",
+  "experiment": "Experiment B (Unified Cross-Dataset)",
+  "num_features": 11,
+  "feature_names": [
+    "flow_duration_sec",
+    "fwd_packets",
+    "bwd_packets",
+    "fwd_bytes",
+    "bwd_bytes",
+    "total_packets",
+    "total_bytes",
+    "packet_rate",
+    "byte_rate",
+    "fwd_pkt_len_mean",
+    "bwd_pkt_len_mean"
+  ],
+  "label_mapping": {
+    "BENIGN": 0,
+    "DOS_DDOS": 1,
+    "PORT_SCAN_RECONNAISSANCE": 2,
+    "BRUTE_FORCE": 3,
+    "OTHER_ATTACK": 6
+  },
+  "inverse_label_mapping": {
+    "0": "BENIGN",
+    "1": "DOS_DDOS",
+    "2": "PORT_SCAN_RECONNAISSANCE",
+    "3": "BRUTE_FORCE",
+    "6": "OTHER_ATTACK"
+  },
+  "sources": [
+    "csecicids2018",
+    "cicids2017",
+    "unsw_nb15"
+  ],
+  "train_samples": 31500,
+  "val_samples": 6750,
+  "test_samples": 6750,
+  "class_distribution_train": {
+    "0": 8238,
+    "1": 3500,
+    "2": 3500,
+    "3": 10478,
+    "6": 5784
+  },
+  "class_distribution_test": {
+    "0": 1765,
+    "1": 750,
+    "2": 750,
+    "3": 2245,
+    "6": 1240
+  },
+  "timestamp": "2026-10-23T17:08:49.126201+00:00"
+}

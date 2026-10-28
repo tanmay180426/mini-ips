@@ -1,0 +1,537 @@
+{
+  "dataset_key": "cicids2017",
+  "task_type": "multiclass",
+  "timestamp": "2026-10-23T17:11:51.097817+00:00",
+  "test_samples": 2250,
+  "class_distribution": {
+    "BENIGN": 750,
+    "DOS_DDOS": 750,
+    "PORT_SCAN_RECONNAISSANCE": 750
+  },
+  "models": {
+    "extra_trees_cicids2017_multiclass_1792775400": {
+      "model_name": "extra_trees_cicids2017_multiclass_1792775400",
+      "accuracy": 0.9987,
+      "balanced_accuracy": 0.9987,
+      "f1_macro": 0.9987,
+      "f1_weighted": 0.9987,
+      "precision_macro": 0.9987,
+      "precision_weighted": 0.9987,
+      "recall_macro": 0.9987,
+      "recall_weighted": 0.9987,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0013,
+      "inference_latency_ms_per_1k": 48.64,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.9973,
+          "recall": 1.0,
+          "f1": 0.9987,
+          "support": 750
+        },
+        "DOS_DDOS": {
+          "precision": 0.9987,
+          "recall": 1.0,
+          "f1": 0.9993,
+          "support": 750
+        },
+        "PORT_SCAN_RECONNAISSANCE": {
+          "precision": 1.0,
+          "recall": 0.996,
+          "f1": 0.998,
+          "support": 750
+        }
+      },
+      "confusion_matrix": [
+        [
+          750,
+          0,
+          0
+        ],
+        [
+          0,
+          750,
+          0
+        ],
+        [
+          2,
+          1,
+          747
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "DOS_DDOS",
+        "PORT_SCAN_RECONNAISSANCE"
+      ],
+      "artifact_path": "models\\extra_trees_cicids2017_multiclass_1792775400\\model.joblib",
+      "artifact_size_kb": 1350.2
+    },
+    "hist_gradient_boosting_cicids2017_multiclass_1792775400": {
+      "model_name": "hist_gradient_boosting_cicids2017_multiclass_1792775400",
+      "accuracy": 0.9978,
+      "balanced_accuracy": 0.9978,
+      "f1_macro": 0.9978,
+      "f1_weighted": 0.9978,
+      "precision_macro": 0.9978,
+      "precision_weighted": 0.9978,
+      "recall_macro": 0.9978,
+      "recall_weighted": 0.9978,
+      "false_positive_rate": 0.004,
+      "false_negative_rate": 0.0007,
+      "inference_latency_ms_per_1k": 33.25,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.9987,
+          "recall": 0.996,
+          "f1": 0.9973,
+          "support": 750
+        },
+        "DOS_DDOS": {
+          "precision": 0.9947,
+          "recall": 1.0,
+          "f1": 0.9973,
+          "support": 750
+        },
+        "PORT_SCAN_RECONNAISSANCE": {
+          "precision": 1.0,
+          "recall": 0.9973,
+          "f1": 0.9987,
+          "support": 750
+        }
+      },
+      "confusion_matrix": [
+        [
+          747,
+          3,
+          0
+        ],
+        [
+          0,
+          750,
+          0
+        ],
+        [
+          1,
+          1,
+          748
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "DOS_DDOS",
+        "PORT_SCAN_RECONNAISSANCE"
+      ],
+      "artifact_path": "models\\hist_gradient_boosting_cicids2017_multiclass_1792775400\\model.joblib",
+      "artifact_size_kb": 660.0
+    },
+    "logistic_regression_cicids2017_multiclass_1792775400": {
+      "model_name": "logistic_regression_cicids2017_multiclass_1792775400",
+      "accuracy": 0.9969,
+      "balanced_accuracy": 0.9969,
+      "f1_macro": 0.9969,
+      "f1_weighted": 0.9969,
+      "precision_macro": 0.9969,
+      "precision_weighted": 0.9969,
+      "recall_macro": 0.9969,
+      "recall_weighted": 0.9969,
+      "false_positive_rate": 0.0053,
+      "false_negative_rate": 0.0007,
+      "inference_latency_ms_per_1k": 0.36,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.9987,
+          "recall": 0.9947,
+          "f1": 0.9967,
+          "support": 750
+        },
+        "DOS_DDOS": {
+          "precision": 0.9921,
+          "recall": 1.0,
+          "f1": 0.996,
+          "support": 750
+        },
+        "PORT_SCAN_RECONNAISSANCE": {
+          "precision": 1.0,
+          "recall": 0.996,
+          "f1": 0.998,
+          "support": 750
+        }
+      },
+      "confusion_matrix": [
+        [
+          746,
+          4,
+          0
+        ],
+        [
+          0,
+          750,
+          0
+        ],
+        [
+          1,
+          2,
+          747
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "DOS_DDOS",
+        "PORT_SCAN_RECONNAISSANCE"
+      ],
+      "artifact_path": "models\\logistic_regression_cicids2017_multiclass_1792775400\\model.joblib",
+      "artifact_size_kb": 1.1
+    },
+    "random_forest_cicids2017_multiclass_1792775400": {
+      "model_name": "random_forest_cicids2017_multiclass_1792775400",
+      "accuracy": 0.9987,
+      "balanced_accuracy": 0.9987,
+      "f1_macro": 0.9987,
+      "f1_weighted": 0.9987,
+      "precision_macro": 0.9987,
+      "precision_weighted": 0.9987,
+      "recall_macro": 0.9987,
+      "recall_weighted": 0.9987,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0013,
+      "inference_latency_ms_per_1k": 45.71,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.9973,
+          "recall": 1.0,
+          "f1": 0.9987,
+          "support": 750
+        },
+        "DOS_DDOS": {
+          "precision": 0.9987,
+          "recall": 1.0,
+          "f1": 0.9993,
+          "support": 750
+        },
+        "PORT_SCAN_RECONNAISSANCE": {
+          "precision": 1.0,
+          "recall": 0.996,
+          "f1": 0.998,
+          "support": 750
+        }
+      },
+      "confusion_matrix": [
+        [
+          750,
+          0,
+          0
+        ],
+        [
+          0,
+          750,
+          0
+        ],
+        [
+          2,
+          1,
+          747
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "DOS_DDOS",
+        "PORT_SCAN_RECONNAISSANCE"
+      ],
+      "artifact_path": "models\\random_forest_cicids2017_multiclass_1792775400\\model.joblib",
+      "artifact_size_kb": 752.1
+    },
+    "isolation_forest_cicids2017_1792775392": {
+      "model_name": "isolation_forest_cicids2017_1792775392",
+      "accuracy": 0.3636,
+      "balanced_accuracy": 0.497,
+      "f1_macro": 0.3265,
+      "f1_weighted": 0.2738,
+      "precision_macro": 0.4925,
+      "precision_weighted": 0.5461,
+      "recall_macro": 0.497,
+      "recall_weighted": 0.3636,
+      "false_positive_rate": 0.1027,
+      "false_negative_rate": 0.9033,
+      "inference_latency_ms_per_1k": 22.1,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.3319,
+          "recall": 0.8973,
+          "f1": 0.4845,
+          "support": 750
+        },
+        "ATTACK": {
+          "precision": 0.6532,
+          "recall": 0.0967,
+          "f1": 0.1684,
+          "support": 1500
+        }
+      },
+      "confusion_matrix": [
+        [
+          673,
+          77
+        ],
+        [
+          1355,
+          145
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "ATTACK"
+      ],
+      "artifact_path": "models\\isolation_forest_cicids2017_1792775392\\model.joblib",
+      "artifact_size_kb": 803.3
+    },
+    "isolation_forest_cicids2017_1792775400": {
+      "model_name": "isolation_forest_cicids2017_1792775400",
+      "accuracy": 0.3569,
+      "balanced_accuracy": 0.4907,
+      "f1_macro": 0.3183,
+      "f1_weighted": 0.2643,
+      "precision_macro": 0.476,
+      "precision_weighted": 0.5251,
+      "recall_macro": 0.4907,
+      "recall_weighted": 0.3569,
+      "false_positive_rate": 0.108,
+      "false_negative_rate": 0.9107,
+      "inference_latency_ms_per_1k": 25.58,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.3287,
+          "recall": 0.892,
+          "f1": 0.4804,
+          "support": 750
+        },
+        "ATTACK": {
+          "precision": 0.6233,
+          "recall": 0.0893,
+          "f1": 0.1563,
+          "support": 1500
+        }
+      },
+      "confusion_matrix": [
+        [
+          669,
+          81
+        ],
+        [
+          1366,
+          134
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "ATTACK"
+      ],
+      "artifact_path": "models\\isolation_forest_cicids2017_1792775400\\model.joblib",
+      "artifact_size_kb": 813.7
+    },
+    "isolation_forest_anomaly_1792645935": {
+      "model_name": "isolation_forest_anomaly_1792645935",
+      "accuracy": 0.3689,
+      "balanced_accuracy": 0.5137,
+      "f1_macro": 0.3219,
+      "f1_weighted": 0.2625,
+      "precision_macro": 0.5465,
+      "precision_weighted": 0.6154,
+      "recall_macro": 0.5137,
+      "recall_weighted": 0.3689,
+      "false_positive_rate": 0.052,
+      "false_negative_rate": 0.9207,
+      "inference_latency_ms_per_1k": 26.12,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.3399,
+          "recall": 0.948,
+          "f1": 0.5004,
+          "support": 750
+        },
+        "ATTACK": {
+          "precision": 0.7532,
+          "recall": 0.0793,
+          "f1": 0.1435,
+          "support": 1500
+        }
+      },
+      "confusion_matrix": [
+        [
+          711,
+          39
+        ],
+        [
+          1381,
+          119
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "ATTACK"
+      ],
+      "artifact_path": "models\\isolation_forest_anomaly_1792645935\\model.joblib",
+      "artifact_size_kb": 813.7
+    },
+    "isolation_forest_anomaly_1792645962": {
+      "model_name": "isolation_forest_anomaly_1792645962",
+      "accuracy": 0.3147,
+      "balanced_accuracy": 0.472,
+      "f1_macro": 0.2394,
+      "f1_weighted": 0.1596,
+      "precision_macro": 0.1603,
+      "precision_weighted": 0.1069,
+      "recall_macro": 0.472,
+      "recall_weighted": 0.3147,
+      "false_positive_rate": 0.056,
+      "false_negative_rate": 1.0,
+      "inference_latency_ms_per_1k": 23.06,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.3207,
+          "recall": 0.944,
+          "f1": 0.4787,
+          "support": 750
+        },
+        "ATTACK": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1500
+        }
+      },
+      "confusion_matrix": [
+        [
+          708,
+          42
+        ],
+        [
+          1500,
+          0
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "ATTACK"
+      ],
+      "artifact_path": "models\\isolation_forest_anomaly_1792645962\\model.joblib",
+      "artifact_size_kb": 721.1
+    },
+    "logistic_regression_multiclass_1792645935": {
+      "model_name": "logistic_regression_multiclass_1792645935",
+      "accuracy": 0.996,
+      "balanced_accuracy": 0.996,
+      "f1_macro": 0.996,
+      "f1_weighted": 0.996,
+      "precision_macro": 0.996,
+      "precision_weighted": 0.996,
+      "recall_macro": 0.996,
+      "recall_weighted": 0.996,
+      "false_positive_rate": 0.0053,
+      "false_negative_rate": 0.002,
+      "inference_latency_ms_per_1k": 0.25,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.996,
+          "recall": 0.9947,
+          "f1": 0.9953,
+          "support": 750
+        },
+        "DOS_DDOS": {
+          "precision": 0.9921,
+          "recall": 1.0,
+          "f1": 0.996,
+          "support": 750
+        },
+        "PORT_SCAN_RECONNAISSANCE": {
+          "precision": 1.0,
+          "recall": 0.9933,
+          "f1": 0.9967,
+          "support": 750
+        }
+      },
+      "confusion_matrix": [
+        [
+          746,
+          4,
+          0
+        ],
+        [
+          0,
+          750,
+          0
+        ],
+        [
+          3,
+          2,
+          745
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "DOS_DDOS",
+        "PORT_SCAN_RECONNAISSANCE"
+      ],
+      "artifact_path": "models\\logistic_regression_multiclass_1792645935\\model.joblib",
+      "artifact_size_kb": 1.5
+    },
+    "random_forest_multiclass_1792645935": {
+      "model_name": "random_forest_multiclass_1792645935",
+      "accuracy": 0.9987,
+      "balanced_accuracy": 0.9987,
+      "f1_macro": 0.9987,
+      "f1_weighted": 0.9987,
+      "precision_macro": 0.9987,
+      "precision_weighted": 0.9987,
+      "recall_macro": 0.9987,
+      "recall_weighted": 0.9987,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0013,
+      "inference_latency_ms_per_1k": 47.07,
+      "per_class": {
+        "BENIGN": {
+          "precision": 0.9973,
+          "recall": 1.0,
+          "f1": 0.9987,
+          "support": 750
+        },
+        "DOS_DDOS": {
+          "precision": 0.9987,
+          "recall": 1.0,
+          "f1": 0.9993,
+          "support": 750
+        },
+        "PORT_SCAN_RECONNAISSANCE": {
+          "precision": 1.0,
+          "recall": 0.996,
+          "f1": 0.998,
+          "support": 750
+        }
+      },
+      "confusion_matrix": [
+        [
+          750,
+          0,
+          0
+        ],
+        [
+          0,
+          750,
+          0
+        ],
+        [
+          2,
+          1,
+          747
+        ]
+      ],
+      "labels": [
+        "BENIGN",
+        "DOS_DDOS",
+        "PORT_SCAN_RECONNAISSANCE"
+      ],
+      "artifact_path": "models\\random_forest_multiclass_1792645935\\model.joblib",
+      "artifact_size_kb": 752.6
+    }
+  }
+}
